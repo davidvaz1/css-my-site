@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="import" href="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Details</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<body style="background-color:lightpink;">
+  <style media="screen">
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    label,
+    input {
+      font-family: monospace, sans-serif;
+    }
+  </style>
+  <h1>Contact Me...</h1>
+  <h3>My Address: 9, C-Wing, Deciduous Woods, Turnabout Alley, Manhole 437, Lane 8, Near Marble River, Dalmations' Corner, Owl Hill, Owl Mansion</h3>
+  <h3>
+    <ul>
+      <li>my.email@gmail.com</li>
+      <li>myemail@outlook.com</li>
+      <li>MyEmail@pythonpro.com</li>
+      <hr id="contactmehorizontalruleseparatoridstyleconfiguration">
+
+    </ul>
+    <h4>Send your message...</h4>
+    <form action="mailto:pythondavidtest@gmail.com?subject=Testing" method="post" enctype="text/plain">
+    <label>Today's Date: </label><input type="date"  name="date"><br><br>
+      <label>Your phone number: </label><textarea type="number" name="phoneNumber" placeholder="Type your phone number" maxlength="10" cols="20"
+        rows="1"></textarea><br><br>
+      <label>Your full name: </label><input placeholder="Type in your full name here..." name="name"><br><br>
+      <label>Your email: </label> <input type="email" name="email" placeholder="Type your email" maxlength="35" cols="25"><br><br>
+      <table>
+        <tr>
+          <td><label>Your message:&nbsp;</label></td>
+          <td><textarea placeholder="Type your message here..." rows="20" cols="80" name="message"></textarea></td>
+        </tr>
+      </table>
+      </tr><br><br>
+      <button onclick="trigger_submit()" type="submit">Submit your message...</button>
+    </form><br>
+    <button onclick="closeWindow()">Click here to shut this tab.</button>
+
+
+  </h3>
+  <script>
+    function trigger_submit() {
+      window.alert("Are you sure you want to submit your message?")
+    }
+
+    function closeWindow() {
+      tab = window.close();
+    }
+
+
+  </script>
+</body>
+
+</html>
